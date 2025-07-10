@@ -28,7 +28,7 @@ function App() {
   const [showUpdateSnackbar, setShowUpdateSnackbar] = useState(false);
   
   // 音频播放相关状态
-  const player = useAudioPlayer(require('./assets/bell-ringing-05.wav'));
+  const player = useAudioPlayer(require('@/assets/bell-ringing-05.wav'));
   const playerStatus = useAudioPlayerStatus(player);
   const isPlaying = playerStatus?.playing || false;
   const isLoaded = playerStatus?.isLoaded || false;
